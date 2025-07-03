@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>portfolioWebSite</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="フォトグラファーのポートフォリオサイトです">
+    <meta name="viewport" content="width=device-width, initial-scal=1,0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Josefin+Sans&family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <h1>My Work</h1>
+      <!-- ナビゲーション -->
+      <nav>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#bicycle">Works</a></li>
+          <li><a href="index.html#news">News</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li>
+            <a  id="icon-insta">
+              <img src="images/icon-instagram.png" alt="instagramのアイコン">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- メインビジュアル -->
+      <section id="main-visual">
+        <img src="images/mainvisual-pc.jpg" alt="メインビジュアル">        
+      </section>
+
+      <!--About-->
+      <section id="about">
+        <h2 class="index-h2">About</h2>
+          <div class="profile">
+            <h3>KAKERU MIYAICHI</h3>
+            <p　class="profile-text">
+              2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan<br>
+              tel: 000-0000-0000<br>
+              url: www.xxxxxx.jp<br>
+              mail: xxx@xxxxxx.jp<br> 
+            </p>
+            <p　class="profile-text">
+              プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+      </section>
+
+      <!--Works-->
+      <section id="works">
+        <h2 class="index-h2">Works</h2>
+        <ul>
+          <li><img id="works1" src="images/works1.jpg" alt="ワーク写真1"></li>
+          <li><img id="works2" src="images/works2.jpg" alt="ワーク写真2"></li>
+          <li><img id="works3" src="images/works3.jpg" alt="ワーク写真3"></li>
+          <li><img id="works4" src="images/works4.jpg" alt="ワーク写真4"></li>
+          <li><img id="works5" src="images/works5.jpg" alt="ワーク写真5"></li>
+          <li><img id="works6" src="images/works6.jpg" alt="ワーク写真6"></li>
+        </ul>
+      </section>
+
+      <!-- News -->
+      <section id="news">
+        <h2 class="index-h2">News</h2>
+        <dl>
+          <dt class="top-dt">2020.xx.xx</dt>
+          <dd class="top-dd">デザイン雑誌「○○」に掲載していただきました。</dd>
+          <dt>2019.xx.xx</dt>
+          <dd>内容が入ります。内容が入ります。内容が入ります。内容が入ります。内容が入ります。
+            内容が入ります。内容が入ります。内容が入ります。内容が入ります。
+            文字の大きさ、量、字間、行間等を確認するために入れています。</dd>
+        </dl>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2 class="index-h2">Contact</h2>
+        <form action="#index.html">
+          <dl>
+            <div>
+              <dt class="contact-heading">NAME</dt>
+              <dd><input type="text" name="name" class="contact-textbox"></dd>
+            </div>
+            <div>
+              <dt class="contact-heading">E-mail</dt>
+              <dd><input type="text" name="email" class="contact-textbox"></dd>
+            </div>
+            <div>
+              <dt class="contact-heading">MESSAGE</dt>
+              <dd><input type="textarea" name="textarea" class="contact-textarea"></dd>
+            </div>
+          </dl>
+            <div class="submit-button">
+              <button type="submit" id="submit">送信</button>
+            </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+        <p id="copyright">&copy;2020 My Works</p>
+    </footer>
+
+  </body>
+</html>

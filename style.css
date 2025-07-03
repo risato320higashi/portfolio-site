@@ -1,0 +1,241 @@
+body{
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  text-align: center;
+  color: #24292e;
+  font-size: 0.9rem;
+}
+
+header {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 70px auto 70px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.0rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  align-items: center;
+
+}
+
+nav li{
+  padding-right: 30px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #24292e;
+  font-size: 0.9rem;
+}
+
+nav img{
+  width: 30px;
+  height: 30px;
+}
+
+#main-visual img{
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.index-h2 {
+  font-size: 1.2rem;
+}
+
+#about {
+  max-width: 960px;
+  padding: 0 4%;
+  margin:100px auto 0 auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 0 30px;
+}
+
+#works {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 100px auto 0 auto;
+}
+
+#works ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  padding: 0;
+}
+
+#works li {
+  list-style: none;
+  padding-left: 0;
+  width: 30%;
+  padding: 10px;
+}
+
+#works img {
+  width: 100%;
+  height: auto;
+}
+
+#news {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 100px auto 0 auto;
+}
+
+#news dl{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+#news dt{
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+#news dd{
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid #ccc; 
+    width: 80%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.top-dt,
+.top-dd{
+    border-top: 1px solid #ccc; 
+}
+
+#contact {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 100px auto 0 auto;
+}
+
+#contact dl div{
+    display:flex;
+    text-align: center;
+    align-items: start;
+    margin: 10px 20px;
+  }
+#contact dt{
+    width: 15%;
+    box-sizing: border-box;
+    text-align: left;
+}
+#contact dd{
+    width: 95%;
+    box-sizing: border-box;
+    text-align: left;
+    margin: 0;
+}
+
+.contact-textbox {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+}
+
+.contact-textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 100px;
+}
+
+#contact button[type="submit"] {
+  padding: 10px 70px;
+  background-color: #24292e;
+  color: #ffffff;
+  cursor: pointer;
+}
+#contact button[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+footer {
+  color: #ffffff;
+  font-size: 0.4rem;
+  background-color: #24292e;
+  padding: 5px 0;
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+
+/* SP */
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #works ul{
+  flex-direction: column;
+  padding-left: 0;
+  }
+
+  #works li {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  #news dl{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0;
+  }
+
+  #news dt{
+      width: 100%;
+      box-sizing: border-box;
+      border-bottom: none;
+      text-align: left;
+      padding: 5px 0 0 0;
+  }
+  #news dd{
+      width: 100%;
+      border-bottom: 1px solid #ccc; 
+      box-sizing: border-box;
+      text-align: left;
+      padding: 0 0 5px 0;
+  }
+
+  .top-dd{
+    border-top: none; 
+  }
+
+  #contact dl div{
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+
+  #contact dt{
+      width: 100%;
+      box-sizing: border-box;
+      text-align: left;
+  }
+  #contact dd{
+      width: 100%;
+      box-sizing: border-box;
+      text-align: left;
+      margin: 0;
+  }
+
+}

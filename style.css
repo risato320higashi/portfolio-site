@@ -58,8 +58,28 @@ nav img{
 .profile {
   display: flex;
   flex-direction: column;
-  text-align: start;
-  margin: 0 30px;
+  align-items: left;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.profile div.name {
+  margin-bottom: 30px;
+}
+
+.profile ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.profile-text {
+  margin-bottom: 30px;
+  padding-left: 0;
+  text-align: left;
 }
 
 #works {
